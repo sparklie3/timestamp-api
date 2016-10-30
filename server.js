@@ -21,7 +21,6 @@ var server = http.createServer(function(req,res){
             console.log('original day:' +day_full)
             var year = Number(request_url_parameter.slice(request_url_parameter.length-4))
             console.log('original year:' +year)
-            
             if (month_full.length < 2 || month_full.length > 9){
                 console.log('month fail: '+month_full)
                 res.end(JSON.stringify(show_null()))
