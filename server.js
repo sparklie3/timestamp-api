@@ -50,7 +50,10 @@ var server = http.createServer(function(req,res){
                     }
                 }
             }
-            var dateString = month_full+day_full+year
+            var dateString = month_full+day_full+','+year
+            console.log(month_full)
+            console.log(day_full)
+            console.log(year)
             console.log(dateString)
             unix = new Date(dateString);
             console.log(unix);
